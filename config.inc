@@ -18,7 +18,7 @@
 ; CONFIG2L
   CONFIG  MCLRE = EXTMCLR       ; MCLR Enable bit (If LVP = 0, MCLR pin is MCLR; If LVP = 1, RE3 pin function is MCLR )
   CONFIG  PWRTS = PWRT_OFF      ; Power-up timer selection bits (PWRT is disabled)
-  CONFIG  MVECEN = OFF           ; Multi-vector enable bit (Multi-vector enabled, Vector table used for interrupts)
+  CONFIG  MVECEN = ON           ; Multi-vector enable bit (Multi-vector enabled, Vector table used for interrupts)
   CONFIG  IVT1WAY = ON          ; IVTLOCK bit One-way set enable bit (IVTLOCK bit can be cleared and set only once)
   CONFIG  LPBOREN = OFF         ; Low Power BOR Enable bit (ULPBOR disabled)
   CONFIG  BOREN = SBORDIS       ; Brown-out Reset Enable bits (Brown-out Reset enabled , SBOREN bit is ignored)

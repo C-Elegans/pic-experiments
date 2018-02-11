@@ -1,15 +1,15 @@
 	#include config.inc
-UDATA
+    UDATA
 delay_1 res 1
 delay_2 res 1
-CODE
+    CODE
+
     org 0x0
     goto main
-    org 0x08
-    goto t1int
-    org 0x18
-    goto t1int
-    org 0xaa
+    org 0x48
+    dw (0xb0)>>2
+
+    org 0xb0
 
 t1int:
     banksel PIR4
@@ -32,7 +32,7 @@ loop
     goto loop
 
 setup_timer
-    movlw b'00110010'
+    movlw b'00010010'
     movwf T1CON
     movlw b'00'                 ; Do not gate the timer
     movwf T1GCON
