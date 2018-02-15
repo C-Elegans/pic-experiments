@@ -29,7 +29,7 @@
   CONFIG  PPS1WAY = ON          ; PPSLOCK bit One-Way Set Enable bit (PPSLOCK bit can be cleared and set only once; PPS registers remain locked after one clear/set cycle)
   CONFIG  STVREN = ON           ; Stack Full/Underflow Reset Enable bit (Stack full/underflow will cause Reset)
   CONFIG  DEBUG = ON            ; Debugger Enable bit (Background debugger enabled)
-  CONFIG  XINST = ON            ; Extended Instruction Set Enable bit (Extended Instruction Set and Indexed Addressing Mode enabled)
+  CONFIG  XINST = OFF            ; Extended Instruction Set Enable bit (Extended Instruction Set and Indexed Addressing Mode enabled)
 
 ; CONFIG3L
   CONFIG  WDTCPS = WDTCPS_31    ; WDT Period selection bits (Divider ratio 1:65536; software control of WDTPS)
