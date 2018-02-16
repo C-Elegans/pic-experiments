@@ -27,10 +27,11 @@ t1int:                          ;Timer 1 interrupt
     
     banksel 0
     movlw 0x1                   
-    addwf digit1, f
-    movlw 0x0A 
-    cpfslt digit1
-    clrf digit1
+    addwf digit1, w
+    daw
+    andlw 0xF
+    movwf digit1
+    
 
     retfie 1                    ; Return from interrupt, restore context
     org 0xd0
